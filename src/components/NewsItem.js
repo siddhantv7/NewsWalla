@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class NewsItem extends Component {
   render() {
-    const { title, description, imageUrl } = this.props;
+    const { title, description, imageUrl, newsUrl } = this.props;
     return (
       <div>
         <>
@@ -11,7 +11,7 @@ export default class NewsItem extends Component {
             <div className="card-body">
               <h5 className="card-title">{title ? (title.length > 50) ? `${title.slice(0, 50)} ...` : title : title}</h5>
               <p className="card-text">{description ? (description.length > 100 ? `${description.slice(0, 100)} ...` : description) : description}</p>
-              <a href="/" className="btn btn-dark">Read more</a>
+              <a href={newsUrl}  target="blank" className="btn btn-dark">Read more</a>
             </div>
           </div>
         </>

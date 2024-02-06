@@ -7,7 +7,7 @@ export default class Navbar extends Component {
             <>
                 <nav className="navbar navbar-expand-lg navbar-light bg-black ">
                     <div className="container-fluid">
-                        <Link className="navbar-brand text-light" to="/general">NewsWalla</Link>
+                        <Link className="navbar-brand text-light" to="/">NewsWalla</Link>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item"> <Link className="nav-link active text-light" to="/business">Business</Link></li>
